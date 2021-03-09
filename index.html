@@ -2,24 +2,1328 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
 </head>
-<body>
+
+<style>
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
     
-    <h1>Portpolio</h1>
 
-    <img src="man_01.png" style="float:left;">
+    #intro {
+        width : 1300px;
+        height : 1100px;    
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /* border : 1px solid black; */
+        margin : 0px auto;
+        margin-top : 50px;
+    }
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, enim dolores obcaecati totam quisquam quos et dignissimos vero ab facere ipsum, sit suscipit? Sunt id deleniti nihil provident harum libero.</p>
-    <p>Corrupti magni laudantium commodi doloribus nisi blanditiis rem inventore, at amet, aut ut eaque eos dignissimos minus officiis quasi soluta odit modi dicta est vel quia. Harum deleniti consectetur ratione!</p>
-    <p>Iste minima labore harum, et tempore ullam, dolorum numquam consequatur architecto sapiente neque vel quia aliquam porro nam. Veritatis, error aut. Sit consectetur numquam alias labore suscipit voluptatibus ratione nostrum!</p>
-    <p>Itaque culpa dolor, quo suscipit quod inventore quam, qui nisi nobis eaque quis assumenda, possimus sit nesciunt. Veniam esse, mollitia saepe repellat cupiditate in, magnam quisquam voluptatibus dolorum magni totam.</p>
-    <p>Ducimus eveniet nam sunt officia aperiam nostrum, sapiente facere, nobis tempore quisquam libero a, ullam beatae. Sunt molestiae dolorem magnam quas reprehenderit natus ut. Velit impedit accusamus deleniti. Repellendus, harum!</p>
-    <p>Eaque porro error quisquam maxime velit. Voluptatem voluptates ducimus saepe quo, vero quia quod amet, consectetur quidem aut, possimus soluta corporis tempora unde provident numquam tenetur et maxime! Libero, eligendi!</p>
-    <p>Autem, ad. Dolore aliquam reprehenderit consequatur modi maxime quam rerum debitis? Neque, veritatis doloremque. Ipsam maiores nobis non est minima? Quo mollitia earum esse! Nihil natus assumenda iste animi fugiat.</p>
-    <p>Blanditiis molestiae rem magnam amet dolore aspernatur est voluptas praesentium voluptate qui, fugiat id neque hic minus assumenda culpa cumque ad possimus laborum perspiciatis, nihil optio sed mollitia! Tenetur, nisi.</p>
-    <p>Dolorum unde minima quos placeat odio, numquam dolore consequuntur suscipit mollitia officiis minus enim officia deserunt earum eaque nihil quibusdam exercitationem atque voluptatem corporis libero. Est quisquam ea odit non?</p>
-    <p>Alias non voluptas sunt quasi quo praesentium rem, harum dignissimos doloribus! Voluptatum aut earum atque minima officiis totam deserunt blanditiis ipsum et iste, fugiat repudiandae odio veritatis, quod obcaecati impedit?</p>
+    #name {
+
+        position: absolute;
+        right : -20px;
+        top : 100px;
+        transform: rotate(90deg);
+        letter-spacing : 5px;
+        /* font-family: 'TmonMonsori'; */
+        
+    }
+
+    #all {
+
+        position: absolute;
+        left : -100px;
+        top : 350px;
+        transform: rotate(90deg);
+        letter-spacing : 5px;
+        /* font-family: 'TmonMonsori'; */
+    }
+
+    #hello {
+
+        position: absolute;
+        right : 20px;
+        top : 800px;
+        letter-spacing : 5px;
+        /* font-family: 'TmonMonsori'; */
+    }
+
+
+    
+    
+    body {
+        font-weight: bold;
+        /* font-family: 'TmonMonsori'; */
+        font-family: 'ELAND_Choice_M';
+
+    }
+
+
+    #lblueb {
+        width : 25px;
+        height: 90px;
+        background-color: #1D2089;
+        position: absolute;
+        left : 264px; 
+        top : 77px;
+        opacity: .3;
+    }
+    #lblackb {
+        width : 25px;
+        height: 90px;
+        background-color: black;
+        position: absolute;
+        left : 276px;
+        top : 112px;
+        opacity: .5;
+    }
+    #port {
+        background-image: url("pics/pofol1.png");
+        width : 270px;
+        height: 66px;
+        position: absolute;
+        left : 550px;
+        top : 79px;
+    }
+    #folio {
+        background-image: url("pics/pofol2.png");
+        width : 300px;
+        height: 68px;
+        position: absolute;
+        left : 526px;
+        top : 690px;
+    }
+    #rblueb {
+        width : 110px;
+        height: 35px;
+        background-color: #1D2089;
+        position: absolute;
+        left : 1074px; 
+        top : 464px;
+        opacity: .3;
+    }
+    #rblackb {
+        width : 110px;
+        height: 35px;
+        background-color: black;
+        position: absolute;
+        left : 1009px; 
+        top : 480px;
+        opacity: .5;
+    }
+    #blueline {
+        width : 290px;
+        height: 380px;
+        position: absolute;
+        left : 520px; 
+        top : 225px;
+        border : 8px solid rgba(29,32,137,.5);
+    }
+    #pic {
+        width : 290px;
+        height: 380px;
+        position: absolute;
+        left : 440px; 
+        top : 180px;
+        border : 8px solid rgba(0,0,0,.5);
+        background-image: url("pics/picme.jpg");
+        background-position: -5px -40px;
+        overflow: hidden;
+    }
+
+    .pagebtns {
+        position: absolute;
+        left : -30px;
+        top : 800px;
+        border-radius: 20px;
+        width : 130px;
+        height: 40px;
+        background: white;
+    }
+
+    .btn0 {
+        position: absolute;
+        left :10px;
+        top : 8px;
+        border-radius: 50%;
+        width: 1px;
+        height: 1px;
+        border: 10px solid #1D2089;
+        background-color: #1D2089;
+
+    }
+
+    .btn1 {
+        position: absolute;
+        left : 40px;
+        top : 8px;
+        border-radius: 50%;
+        width: 1px;
+        height: 1px;
+        border: 10px solid black;
+        background-color: black;
+
+    }
+    .btn2 {
+        position: absolute;
+        left : 70px;
+        top : 8px;
+        border-radius: 50%;
+        width: 1px;
+        height: 1px;
+        border: 10px solid #1D2089;
+        background-color: #1D2089;
+
+    }
+    .btn3 {
+        position: absolute;
+        left : 100px;
+        top : 8px;
+        border-radius: 50%;
+        width: 1px;
+        height: 1px;
+        border: 10px solid black;
+        background-color: black;
+    }
+
+    
+    .btn0:hover {
+        cursor: pointer; 
+    }
+    .btn1:hover {
+        cursor: pointer; 
+    }
+    .btn2:hover {
+        cursor: pointer; 
+    }
+    .btn3:hover {
+        cursor: pointer; 
+    }
+
+    #profile {
+        width : 1300px;
+        height : 1100px;    
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /* border : 1px solid black; */
+        margin : 0px auto;
+    }
+  
+
+    #bar {
+        width: 0px;
+        height: 680px;
+        border: 8px solid #1D2089;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        background-color: #1D2089;
+    }
+
+    #pname {
+        width : 135px;
+        height: 25px;
+        background-color: #1D2089;
+        position: absolute;
+        left: 60px;
+        top: 10px;
+        padding : 8px;
+        color : whitesmoke;
+        font-size : 1.5em;
+    }
+
+    #pbirth {
+        width : 170px;
+        height: 25px;     
+        position: absolute;
+        left: 60px;
+        top: 70px;
+        padding : 8px;      
+        font-size : 1.3em;
+    }
+    #email {
+        width : 170px;
+        height: 25px;     
+        position: absolute;
+        left: 60px;
+        top: 100px;
+        padding : 8px;      
+        font-size : 1.3em;
+    }
+    #pedu {
+        /* width : 350px; */
+        width : 180px;
+        height: 25px;     
+        position: absolute;
+        left: 60px;
+        top: 150px;
+        padding : 8px;  
+        font-size : 1.3em;
+        background-color: white;
+    }
+
+
+
+    #pedus {
+        width : 350px;
+        height: 25px;
+        position: absolute;
+        left: 60px;
+        top: 150px;
+        padding : 8px;
+        font-size : 1.3em;
+        transition-duration: 1s;
+        
+    }
+    #pedu2 {
+        /* width : 350px; */
+        width : 180px;
+        height: 25px;     
+        position: absolute;
+        left: 60px;
+        top: 190px;
+        padding : 8px;  
+        font-size : 1.3em;
+        background-color: white;
+        
+    }
+    #pedus2 {
+        width : 350px;
+        height: 25px;
+        position: absolute;
+        left: 60px;
+        top: 190px;
+        padding : 8px;
+        font-size : 1.3em;
+        transition-duration: 1s;
+        
+    }
+    #pskill {
+        width : 400px;
+        height: 25px;   
+        position: absolute;
+        left: 60px;
+        top: 280px;
+        padding : 8px;     
+        font-size : 1.3em;
+        line-height: 45px;
+        font-style: italic;
+    }
+
+    .skill {
+        width : 150px;
+        float: left;
+    }
+
+    .skillbar {
+        width : 200px;
+        float: left;
+        margin-top : 10px;
+    }
+
+    .progress {
+      
+        border : 1px solid black;
+        border-radius: 2px;
+        height: 20px;
+        width: 200px;
+        }
+
+    .progress-value1 {
+        animation: load1 1s normal forwards;
+        /* box-shadow: 0 10px 40px -10px #fff; */
+        border-radius: 2px;
+        background:  #1D2089;
+        height: 20px;
+        width: 0;
+        /* transition-duration: 2s; */
+        }
+    .progress-value2 {
+        animation: load2 1s normal forwards;
+        /* box-shadow: 0 10px 40px -10px #fff; */
+        border-radius: 2px;
+        background: #1D2089;
+        height: 20px;
+        width: 0;
+        /* transition-duration: 2s; */
+        }
+    .progress-value3 {
+        animation: load3 1s normal forwards;
+        /* box-shadow: 0 10px 40px -10px #fff; */
+        border-radius: 2px;
+        background: #1D2089;
+        height: 20px;
+        width: 0;
+        /* transition-duration: 2s; */
+        }
+
+    @keyframes load1  {
+    from { width: 0%; }
+    to   { width: 70%; }
+    }
+    @keyframes load2 {
+    from { width: 0%; }
+    to   { width: 80%; }
+    }
+    @keyframes load3 {
+    from { width: 0%; }
+    to   { width: 60%; }
+    }
+
+    #mainpic {
+
+        width: 236px;
+        height: 315px;
+        background-image: url("pics/mainpic.png");
+        position: absolute;
+        left: 100px;
+        top: -220px;
+
+    }
+
+    #circle {
+        position: absolute;
+        left: 750px;
+        top: 250px;
+        /* border : 1px solid black;  */
+        width: 550px;
+        height: 600px;
+        background-image: url("pics/circle.png");
+        /* background: no-repeat; */
+        
+    }
+
+    #project {
+        width : 1300px;
+        height : 1100px;    
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /* border : 1px solid black; */
+        margin : 0px auto;
+
+    }
+
+    #projects {
+
+        position: absolute;
+        left : 40px;
+        top : 150px;
+
+        width : 700px;
+
+
+        }
+
+        .project {
+        margin-right : 150px;
+        margin-bottom : 10px;
+        width : 180px;
+        height: 300px;
+        /* border:  1px solid black; */
+        float: left;
+        }
+
+        .project .pic {
+        /* border:  1px solid #999; */
+        width: 260px;
+        height: 180px;
+        float: left;
+
+        }
+
+        .project .text {
+            margin-top : 5px;
+            float: left;    
+        
+        }
+
+        #project #project1 .pic {
+            background-image: url("pics/project1.png");
+        }
+        #project #project2 .pic {
+            background-image: url("pics/project2.png");
+        }
+        #project #project3 .pic {
+            background-image: url("pics/project3.png");
+        }
+
+        #book {
+            width : 550px;
+            height: 800px;
+            /* border : 1px solid black; */
+            position: absolute;
+            left : 750px;
+            top : 0px;
+            background-image: url("pics/book.png");
+        }
+
+        #lbar {
+
+            width : 650px;
+            background-color: #1D2089;
+            border : 5px solid #1D2089;
+        }
+
+        #projectdetail1 {
+        width : 1300px;
+        height : 800px;    
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /* border : 1px solid black; */
+        margin : 0px auto;
+        /* color : white; */
+
+        }
+
+        .projectdepics {
+            /* border : 1px solid black; */
+            width: 700px;
+            height: 700px;
+            float: left;
+        }
+
+        .projectdepic {
+            /* border : 1px solid black; */
+            width : 200px;
+            height: 200px;
+            float : left;
+            margin : 15px;
+            overflow: hidden;
+            cursor: pointer;            
+            opacity: .5;
+        }
+
+        .projectdepic div:nth-child(2) {
+
+            font-size : 1.5em;
+            margin-top : 80px;
+        }
+
+        .projectdepic  input {
+            margin-top : 50px;
+            font-size : 1.2em;
+        }
+
+
+
+
+
+        .detail {
+            float: left;
+            margin-left : 120px;
+            margin-top : 200px;
+            font-size: 2em;
+            line-height: 100px;
+            /* text-align: right; */
+            color :#999;
+        }
+
+        .first:hover {
+            cursor: pointer;
+        }
+        .second:hover {
+            cursor: pointer;
+        }
+        .third:hover {
+            cursor: pointer;
+        }
+        .four:hover {
+            cursor: pointer;
+        }
+
+    
+        #project1btn, #project2btn, #project3btn {
+            float: left;
+            margin-left : 30px;
+            font-size : 2em;
+
+        }
+
+        #pagebtns {
+            width : 500px;
+            position: absolute;
+            left : 900px;
+            top : 800px;      
+        }
+
+         
+        #project1btn:hover {
+            cursor: pointer;
+        }
+
+        #project2btn:hover{
+            cursor: pointer;
+
+        } 
+        #project3btn:hover {
+
+            cursor: pointer;
+        }
+
+        .projectdepics .line1 {
+            font-size: 2em;
+            margin-bottom:90px;
+            margin-left : 10px;
+            margin-top : 70px;
+        }
+        .projectdepics .line2 {
+            font-size : 1.8em;
+            width: 550px;
+            margin-left : 10px;
+            margin-bottom:90px;
+            
+        }
+        .projectdepics .line3 {
+            margin-left : 10px;
+            font-size : 1.8em;
+            margin-top : 90px;
+        }
+
+        .projectdepics .line4 {
+            margin-left : 10px;
+            font-size : 1.8em;
+            margin-top : 70px;
+        }
+
+
+        .projectdepics .line3 div:last-child {
+            margin-left : 50px;
+            margin-top : 20px;
+            letter-spacing: 1.2px;
+            width: 570px;
+            font-size : .9em;
+            line-height : 40px;
+        }
+
+        .projectdepics .line4 div:last-child {
+            margin-left : 50px;
+            margin-top : 20px;
+            letter-spacing: 1.2px;
+            width: 570px;
+            font-size : .9em;
+            line-height : 40px;
+        }
+
+        .protwo {
+            font-size : 2em;
+
+        }
+
+        .protwo div {
+            margin : 90px 0px 110px 20px;
+        }
+        
+
+        .profour div:first-child {
+            font-size : 1.8em;
+            margin-top : 80px;
+            margin-left : 0px;
+        }
+        .profour div:last-child {
+            margin-top : 50px;
+            font-size : 1.2em;
+            letter-spacing: 1.2px;
+            margin-left : 20px;
+            text-align: justify;
+            margin-right: 20px;
+            line-height : 40px;
+        }
+
+        /* #half {
+            width : 100%;
+            height: 100%;
+            background-color: black;
+            position : absolute;
+            left: 0px;
+            top: 3150px;
+            z-index: -1;
+        } */
+
+
+        #ending {
+            width : 100%;
+            height: 100%;   
+            position : absolute;
+            left: 0px;
+            top: 4250px;
+            /* margin : 0px auto; */
+            background-color: #1D2089;
+
+        }
+
+        #thank {
+            /* position: absolute;
+            left: 800px;
+            top: 500px; */
+            width : 800px;
+            margin : 20% 35%;
+            font-size: 5em;
+            color: white;
+            float: left;
+
+        }
+        #thank div {
+            margin-right : 20px;
+            color : #33D462;
+            float: left;
+        }
+
+</style>
+<body>
+    <div id="intro">
+        <div id="name">YUNJIBONG</div>
+        <div id="hello">HELLO, I AM A PROGRAMER</div>
+        <div id="all">ALL : MY OWN WORKS</div>
+        <div id="lblueb"></div>
+        <div id="lblackb"></div>
+        <div id="port"></div>
+        <div id="folio"></div>
+        <div id="rblueb"></div>
+        <div id="rblackb"></div>
+        <div id="blueline"></div>
+        <div id="pic"></div>
+
+        <div class="pagebtns">
+            <div class="btn0"></div>
+            <div class="btn1"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+        </div>
+    </div>
+
+    <div id="profile"> 
+        <div id="bar"></div>
+        <div id="pname">YUNJIBONG</div>
+        <div id="pbirth">1992.06.05</div>
+        <div id="email">yunjibong@naver.com</div>
+        <div id="pedus">2011.03 - 2015.02</div>
+        <div id="pedu">전북대학교 졸업</div>
+        <div id="pedus2">2020.10 - 2021.03</div>
+        <div id="pedu2">쌍용교육센터 수료</div>
+        
+        <div id="pskill">
+            <div class="skillout">
+                <div class="skill">Java </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value1"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="skillout">
+                <div class="skill">Oracle </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value1"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="skillout">
+                <div class="skill">JDBC </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value2"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="skillout">
+                <div class="skill">HTML5 </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value2"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="skillout">
+                <div class="skill">CSS3 </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value2"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="skillout">
+                <div class="skill">JavaScript </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="skillout">
+                <div class="skill">Servlet </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value2"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="skillout">
+                <div class="skill">JSP </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value2"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="skillout">
+                <div class="skill">Spring4 </div>
+                <div class="skillbar" style="display: none;">
+                    <div class="progress">
+                        <div class="progress-value3"></div>
+                    </div>
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+            
+        </div>
+        
+        <div class="pagebtns">
+            <div class="btn0"></div>
+            <div class="btn1"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+        </div>
+
+        <div id="circle">
+        <div id="mainpic"></div>
+        </div>
+        
+    </div>
+    <div id="project">
+        <div id="lbar"></div>
+        <div id="book"></div>
+        <div id="projects">
+            <div class="project" id="project1"><div class="pic"></div><div class="text">01프로젝트<br>쌍용영화관<br>영화관 예매프로그램</div></div>
+            <div class="project"id="project2"><div class="pic"></div><div class="text">02프로젝트<br>쌍용교육센터<br>학원 관리 프로그램</div></div>
+            <div class="project"id="project3"><div class="pic"></div><div class="text">03프로젝트<br>야너두<br>구인구직사이트</div></div>
+
+        </div>
+
+        <div class="pagebtns">
+            <div class="btn0"></div>
+            <div class="btn1"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+        </div>
+
+    </div>
+
+
+   
+    <div id="projectdetail1">
+        <div id="outs1">
+            <div class="projectdepics proone">
+            <div class="line1">영화 예매 콘솔 프로젝트(2개월차 프로젝트)</div>
+            <div class="line2">판매 대상 : 영화관</div>
+            <div class="line3"><div>구현 목적 :</div><div> 영화 예매 서비스 뿐 아니라 성향에 맞는 영화를 추천해주는 예매 프로그램을 구현 </div></div>
+            <div class="line4"><div>담당 파트 :</div><div> 회원정보수정, 예매 취소, 회원 탈퇴 구현 </div></div>
+            </div>
+            <div class="projectdepics protwo" style="display: none;">
+                <div>운영체제 : windows10</div>
+                <div>개발툴 : Eclipse</div>
+                <div>개발 언어 : Java(JDK1.8)</div>
+            </div>
+            <div class="projectdepics prothree" style="display: none;">
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/001.png'); width: 600px; height:400px;"></div>
+                    <div>영화관 예매 콘솔 프로젝트로 영화관이 판매 대상입니다. 고객과 관리자로 나눠 구현했습니다.</div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/002.png'); width: 600px; height:350px;"></div>
+                    <div>콘솔 프로그램 메인 구현 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/003.png'); width: 600px; height:350px;"></div>
+                    <div>콘솔 프로그램 상영 영화 내역 구현 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/004.png'); width: 600px; height:390px;"></div>
+                    <div>콘솔 프로그램 예매 내역 확인 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/005.png'); width: 600px; height:370px;"></div>
+                    <div>콘솔 프로그램 개인정보 조회 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/006.png'); width: 600px; height:370px;"></div>
+                    <div>콘솔 프로그램 개인 정보 수정 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/007.png'); width: 600px; height:370px;"></div>
+                    <div>콘솔 프로그램 회원 탈퇴 기능 조회 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/010.png'); width: 600px; height:390px;"></div>
+                    <div>콘솔 프로그램 회원 탈퇴 화면 </div>
+                    <input type="file" name="" id="">
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project1/009.png'); width: 570px; height:350px;"></div>
+                    <div>개발 일정 </div>
+                </div>
+            </div>
+            <div class="projectdepics profour" style="display: none;">
+                <div><div>느낀점 : </div><div>아이디어 회의부터 구현까지 모두 새로웠고 프로젝트 과정내내 어렵고 힘든 부분이 많았지만 힘든만큼 배운 것도 많았던 것 같습니다. 특히 선생님께서 수업시간에 변수 정의하는데에 중요성을 많이 강조하셨는데 팀원들과 작업을 하다 보니 본인의 데이터를 하나 수정하면 그에 따라 수정해야 하는 변수가 많아지고, 하나씩 찾아서 고쳐주어야 하는 과정이 많다는 것을 직접 경험해보고 변수 정의의 중요성을 다시 한 번 깨닫게 되었습니다.</div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div id="outs2" style="display: none;">
+            <div class="projectdepics proone">
+                <div class="line1">교육센터 운영 프로그램(3.5개월차 프로젝트)</div>
+                <div class="line2">판매 대상 : 교육센터</div>
+                <div class="line3"><div>구현 목적 :</div><div> 학생 관리, 수업 관리, 스티디룸 대실, 스터디 그룹 및 전반적인 운영에 대한 관리가 가능한 프로그램 구현  </div></div>
+                <div class="line4"><div>담당 파트 :</div><div>교사 스케줄 조회 및 관리, 출결 조회 및 관리</div></div>
+             </div>
+             <div class="projectdepics protwo"  style="display: none;">
+                 <div>운영체제 : windows10</div>
+                 <div>개발툴 : Eclipse, Oracle SQL Developer</div>
+                 <div>개발 언어 : Java(JDK1.8), SQL</div>
+                  
+             </div>
+            <div class="projectdepics prothree" style="display: none;">
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/001.png'); width: 600px; height:530px;"></div>
+                    <div>교육센터 운영 프로그램으로 관리자와 교사, 교육생으로 나눠 구현했습니다.</div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/002.png'); width: 600px; height:450px;"></div>
+                    <div>콘솔 프로그램 메인 구현 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/003.png'); width: 600px; height:340px;"></div>
+                    <div>교사 로그인 후 메인 구현 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/004.png'); width: 600px; height:330px;"></div>
+                    <div>교사 담당과정 조회 구현 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/005.png'); width: 600px; height:315px;"></div>
+                    <div>교사 담당 과정 과목 및 관련 정보 조회 구현 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/006.png'); width: 600px; height:315px;"></div>
+                    <div>교사의 담당 수업 교육생 조회용 기간 입력 구현 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/007.png'); width: 600px; height:370px;"></div>
+                    <div>교육생 관련 검색 결과 구현 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/008.png'); width: 600px; height:368px;"></div>
+                    <div>ERD 작성 화면 </div>
+                    <input type="file" name="" id="">
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project2/009.png'); width: 600px; height:370px;"></div>
+                    <div>개발 일정 </div>
+                </div>
+            </div>
+            <div class="projectdepics profour" style="display: none;">
+                <div><div>느낀점 : </div><div>SQL은 JAVA와 비슷하면서도 달랐습니다. 결정적으로 데이터 저장 방법과 호출 방법에 차이가 컸던 것 같습니다.  JAVA와 마찬가지로 팀으로 작업하면서 한 부분을 거의 전담하여 시작부터 마무리까지 하다 보니 다른 부분에 대한 이해는 프로젝트가 끝나 후에 이뤄지는 것 같고 그래서 제가 온전히 참여하여 만든 것 같은 느낌이 반감되어 아쉬웠습니다. 
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="outs3" style="display: none;">
+            <div class="projectdepics proone" >
+                <div class="line1">구인구직 사이트(4.5개월차 프로젝트)</div>
+                <div class="line2">판매 대상 : 사이트 관리자</div>
+                <div class="line3"><div>구현 목적 :</div><div> 구직을 원하는 사람과 구인을 원하는 회사 모두 의사 전달이 가능한 개발자를 위한 사이트를 구현 </div></div>
+                <div class="line3"><div>담당 파트 :</div><div>관리자 매치업 조회 및 수익 조회, 직무, 태그 및 태그 카테고리 관리</div></div>
+            </div>
+            <div class="projectdepics protwo"  style="display: none;">
+                <div>운영체제 : windows10</div>
+                <div>개발툴 : Eclipse, Oracle SQL Developer,Visual Studio</div>
+                <div>개발 언어 : Java(JDK1.8), Oracle</div>
+            </div>
+            <div class="projectdepics prothree" style="display: none;">
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/001.png'); width: 600px; height:460px;"></div>
+                    <div>구인구직 사이트로 구직자와 구인자 모두 원하는 직장, 원하는 인재를 선정하여 의사를 표현 할 수 있는 사이트를 구현했습니다.</div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/002.png'); width: 600px; height:330px;"></div>
+                    <div>웹프로젝트 메인 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/003.png'); width: 600px; height:330px;"></div>
+                    <div>관리자 페이지 매칭 관련 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/004.png'); width: 600px; height:430px;"></div>
+                    <div>관리자 페이지 기업별 수익 관리 화면</div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/005.png'); width: 600px; height:360px;"></div>
+                    <div>관리자 페이지 전체 수익 조회 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/006.png'); width: 600px; height:360px;"></div>
+                    <div>관리자 페이지 테그 카테고리 관리 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/007.png'); width: 600px; height:400px;"></div>
+                    <div>ERD - 회원 작성 화면 </div>
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/008.png'); width: 600px; height:400px;"></div>
+                    <div>ERD - 기업 작성 화면 </div>
+                    <input type="file" name="" id="">
+                </div>
+                <div class="projectdepic">
+                    <div style="background-image: url('pics/project3/009.png'); width: 570px; height:320px;"></div>
+                    <div>개발 일정 </div>
+                </div>
+            </div>
+            <div class="projectdepics profour" style="display: none;">
+                <div><div>느낀점 : </div><div>console 프로젝트를 할때는 웹 프로젝트를 하면 기능 구현 및 사용자의 선택지가 많아서 편할 거라고 생각했는데 막상 하고 보니 디자인하는게 너무 어려웠다. 동적인 기능에 반응하는 추가적인 기능을 붙이는 것에도 시간을 많이 소요하게 했다. 시간에 쫓기어 처음 기획했던 모든 기능을 다 담은 사이트를 완성하지는 못했지만 반복하는 작업이 많아서 java, db, jdbc, server를 연결하는 절차적인 부분에 대한 연습과 java, db, jdbc를 복습할 수 있어서 좋았다. 이번 프로젝트에서느 중간중간 ddl 수정이 특히 많았는데 처음에 만드는 요구명세서를 구체적으로 만들어야 한다는 것과 erd 작성이 정말 중요하다는걸 다시 한번 느끼게 했다.
+                </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="detail">
+            <ul class="firstproject">
+                <li class="first">Before Project</li>
+                <li class="second">Development Environment</li>
+                <li class="third">Responsibilities</li>
+                <li class="four">After Project</li>
+            </ul>
+
+        </div>
+        <div id="pagebtns">
+            <div id="project1btn">project1</div>
+            <div id="project2btn">project2</div>
+            <div id="project3btn">project3</div>
+        </div>
+
+        <div class="pagebtns">
+            <div class="btn0"></div>
+            <div class="btn1"></div>
+            <div class="btn2"></div>
+            <div class="btn3"></div>
+        </div>
+
+        
+    </div>
+    <div id="half"></div>
+
+
+    <div id="ending">
+
+
+        <div id="thank"><div>Thanks</div> for Watching</div>
+
+        
+       
+    </div>
+
+
+
+    
+
+    <div style="height: 100px;"></div>
+
+    
+
+
+
+
+    
+
+    <script>
+
+        let flag = false;
+        let flag2 = true;
+
+        $(document).click(function() {
+           //alert(flag +","+ flag2);
+            if (flag) {
+            
+            flag = false;
+            setTimeout(function (){
+                flag2 = true;
+            },10);
+                $(".projectdepic").css({
+                    "display":"block",
+                    "width" : "200px",
+                    "height" : "200px",
+                    "margin" : "15px",
+                    "opacity" : ".5"
+                    
+                    
+                });
+            }
+            });
+
+            $(".projectdepic").click(function() {
+            if(flag2) {
+                //console.log($(this));
+                $(".projectdepic").css({
+                    "display" : "none"
+                });
+                $(this).css({
+                    "display":"block",
+                    "width" : "600px",
+                    "height" : "700px",
+                    "margin-left" : "45px",
+                    "opacity" : "1"  
+                });
+                
+                flag2 = false;
+                setTimeout(function (){
+                    flag = true;
+                },10);
+
+
+            }
+        });
+
+        $(".projectdepic").mouseover(function() {
+            $(this).css({
+                "opacity" : "1"  
+            })
+        });
+
+        $(".projectdepic").mouseout(function() {
+            if(flag2)
+            $(this).css({
+                "opacity" : ".5"  
+            })
+        });
+
+
+       
+
+        $("#project1btn").click(function() {
+            $("#outs1").css({
+                "display" : "block"
+            })
+            $("#outs2").css({
+                "display" : "none"
+            })
+            $("#outs3").css({
+                "display" : "none"
+            })
+        });
+        $("#project2btn").click(function() {
+            $("#outs1").css({
+                "display" : "none"
+            })
+            $("#outs2").css({
+                "display" : "block"
+            })
+            $("#outs3").css({
+                "display" : "none"
+            })
+        });
+        $("#project3btn").click(function() {
+            $("#outs1").css({
+                "display" : "none"
+            })
+            $("#outs2").css({
+                "display" : "none"
+            })
+            $("#outs3").css({
+                "display" : "block"
+            })
+        });
+
+
+
+
+        $(".first").click(function() {
+            $(".proone").css({
+                "display" : "block"
+            })
+            $(".protwo").css({
+                "display" : "none"
+            })
+            $(".prothree").css({
+                "display" : "none"
+            })
+            $(".profour").css({
+                "display" : "none"
+            })
+        });
+        $(".second").click(function() {
+            $(".proone").css({
+                "display" : "none"
+            })
+            $(".protwo").css({
+                "display" : "block"
+            })
+            $(".prothree").css({
+                "display" : "none"
+            })
+            $(".profour").css({
+                "display" : "none"
+            })
+        });$(".third").click(function() {
+            $(".proone").css({
+                "display" : "none"
+            })
+            $(".protwo").css({
+                "display" : "none"
+            })
+            $(".prothree").css({
+                "display" : "block"
+            })
+            $(".profour").css({
+                "display" : "none"
+            })
+        });$(".four").click(function() {
+            $(".proone").css({
+                "display" : "none"
+            })
+            $(".protwo").css({
+                "display" : "none"
+            })
+            $(".prothree").css({
+                "display" : "none"
+            })
+            $(".profour").css({
+                "display" : "block"
+            })
+        });
+
+        $("#pedu").mouseover(function() {
+            $("#pedus").css({
+                left : 250,
+                top : 150
+            })
+        });
+        $("#pedu").mouseout(function() {
+            $("#pedus").css({
+                left : 60,
+                top : 150
+            })
+        });
+
+        $("#pedu2").mouseover(function() {
+            $("#pedus2").css({
+                left : 250,
+                top : 190
+            })
+        });
+        $("#pedu2").mouseout(function() {
+            $("#pedus2").css({
+                left : 60,
+                top : 190
+            })
+        });
+
+
+        $(".btn0").click(function() {
+            //alert($(document).scrollTop(),$(document).scrollLeft());
+             $(document).scrollTop(0);
+        });
+
+        $(".btn1").click(function() {
+            //alert($(document).scrollTop(),$(document).scrollLeft());
+             $(document).scrollTop(1100);
+        });
+
+        $(".btn2").click(function() {
+            //alert($(document).scrollTop(),$(document).scrollLeft());
+             $(document).scrollTop(2200);
+        });
+        $(".btn3").click(function() {
+            //alert($(document).scrollTop(),$(document).scrollLeft());
+             $(document).scrollTop(3300);
+        });
+        //$(document).scroll(function() {
+
+
+        // $(document).scroll(function() {
+        //     if ( $(document).scrollTop() >  $(document).scrollTop(103) ) {
+                
+        //     }
+        // }
+       
+        $(".skillout").mouseover(function() {
+            $(this).find(".skillbar").css({
+                "display" : "block"
+            })
+
+        })
+
+
+        $("#pic").mouseover(function() {
+            $("#lblackb").css({
+                "left" : "264px",         "top" : "77px",
+                "transition-duration": ".8s"
+            });
+            $("#rblackb").css({
+                "left" : "1074px",         "top" : "464px",
+                "transition-duration": ".8s"
+            });
+            $("#pic").css({
+                "left" : "520px",         "top" : "225px",
+                "transition-duration": ".8s"
+            })
+        });
+        $("#pic").mouseout(function() {
+            $("#lblackb").css({
+                "left" : "276px",         "top" : "112px",
+                "transition-duration": ".8s"
+            });
+            $("#rblackb").css({
+                "left" : "1009px",         "top" : "480px",
+                "transition-duration": ".8s"
+            });
+            $("#pic").css({
+                "left" : "440px",         "top" : "180px",
+                "transition-duration": ".8s"
+            })
+        });
+
+    
+
+
+    </script>
+
 </body>
 </html>
